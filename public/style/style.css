@@ -1,0 +1,311 @@
+/*********BASE*********/
+
+body {
+    display: block;
+	font-family: 'Arial';
+	background: lightgray;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    color: goldenrod;
+    margin-left: 10px;
+    font-size: 25px;  
+	padding:2px 5px;
+}
+
+
+/*********NAV*********/
+
+.main_menu {
+    padding: 15px;
+    background: darkslategrey;
+	text-align:center;
+}
+
+a:link, a:visited {
+    color: goldenrod;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 20px; 
+    padding: 3px;
+	margin-right:15px;
+}
+
+a:hover {
+	color: darkslategrey;
+	background: goldenrod;
+}
+
+.main_page {
+    display: block;
+}
+
+
+/*********MENU*********/
+
+.menu {
+    display: inline-block;
+    width: 65%;
+
+}
+
+.menu ul {
+    margin-top: 20px;
+	margin-right: 10px;
+	margin-left:20px;
+	background: darkslategrey;
+}
+
+.menu ul li {
+    overflow: auto;
+}
+
+.menu ul li p {
+	color: lightgrey;
+    padding:0 10px;
+	float:left;
+	font-size: 20px;
+}
+
+.menu ul li p:first-child {
+    color: goldenrod;
+}
+
+.menu ul li .container {
+    float:right;
+}
+
+.menu ul li .container .amount {
+    padding-left: 0px;    
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.menu ul li .container .amount input {
+    width: 40px;
+    margin-left: 10px;
+    color: darkslategrey;   
+}
+
+.menu ul li .container button {
+    color: black;
+	background: goldenrod;
+    border: 2px black solid;
+	margin-top: 20px;
+	margin-right:15px;
+	float:right;
+	padding:5px;
+}
+
+.menu ul li .container button:hover {
+    color: goldenrod;
+    background-color: darkslategrey;
+}
+
+
+
+/*********BASKET*********/
+
+.floating {
+    display: inline-block;
+    position: fixed;
+    width: auto;
+}
+
+.basket {
+    float: left;
+    margin-top: 20px;
+	margin-left:20px;
+    background: darkslategrey;
+    color: lightgrey;
+}
+
+.basket ul li p {
+	margin-top:10px;
+}
+
+.basket ul li input {
+    width: 40px;
+    margin-right: 10px;
+    color: darkslategrey;
+	margin-top:10px;
+}
+
+.basket ul li button {
+    color: black;
+    background-color: goldenrod;
+    border: 2px black solid;
+    float: right;
+	padding:5px;
+	margin:0 20px;
+}
+
+.basket .continue {
+	color: black;
+	background: goldenrod;
+    border: 2px black solid;
+    float: right;
+	padding:5px;
+	margin-left:20px;
+	margin-top:10px;
+	margin-bottom:20px;
+	margin-right:20px;
+}
+
+.basket .continue:hover, .basket button:hover {
+    color: goldenrod;
+    background-color: darkslategrey;
+	padding:5px;
+}
+
+.basket p {
+    float: left;
+    margin-left:30px;
+	margin-bottom:20px;
+}
+
+
+/*********CONTACT*********/
+
+.contact {
+    background: darkslategrey;
+    color: lightgrey;
+    display: inline-block;
+    width: 30%;
+    overflow: auto;
+    border: 1px solid #3B3D37;
+	text-align:left;
+	margin: 20px 35% 0 35%
+}
+
+.contact h1 {
+	color: goldenrod;
+    font-size: 30px;  
+	padding:2px 5px;
+	text-align:center;
+}
+
+.contact h2 {
+    margin-left: 20px;
+    font-size: 20px;
+	font-weight:bold;
+	color: lightgrey;
+}
+
+
+.contact h2 span {
+    font-size: 20px; 
+    margin-left:10px;
+	font-weight:normal;
+}
+
+
+/*********ORDER*********/
+
+.form {
+    display: inline-block;
+	padding:30px;
+	padding-top:10px;
+    width: 40%;
+    margin-top: 20px;
+    margin-right: 3%;
+	margin-left: 3%;
+    float: right;
+	background: darkslategrey;
+}
+
+.form form input {
+    width: 60%;
+    color: darkslategrey; 
+	padding:10px;
+	margin:5px 0;
+	margin-left: 20px;
+}
+
+.form form textarea {
+    width: 90%;
+	padding:10px;
+    color: darkslategrey;
+	margin:5px 0;
+	margin-left: 20px;
+}
+
+.form button {
+	margin-top: 20px;
+	margin-right:15px;
+	float:right;
+    color: darkslategrey;
+    background-color: goldenrod;
+    border: 2px black solid;
+	padding:5px;
+}
+
+.form button:hover {
+    color: goldenrod;
+    background-color: darkslategrey;
+}
+
+.form button:disabled {
+    color: black;
+    border: 2px black solid;
+	background-color: lightgrey;
+}
+
+.basket_read_only {
+	display: inline-block;
+	padding:30px;
+	padding-top:10px;
+    width: 40%;
+    margin-top: 20px;
+    margin-right: 3%;
+	margin-left: 3%;
+	background: darkslategrey;
+	color: lightgray;
+}
+
+.basket_read_only p:first-child {	
+	margin-top:20px;
+}
+
+.orderSum {
+	float:right;
+}
+
+
+
+
+/*********STATUS*********/
+
+.orderWaitTime {
+    display: inline-block;
+    width: 40%;
+    overflow: auto;
+    margin-top: 20px;
+	margin-left:30%;
+    
+    background: darkslategrey;
+    color: lightgrey;
+}
+
+.orderWaitTime > h1 {
+    text-align: center;
+    padding: 0;
+    color: lightgrey;
+}
+
+.orderWaitTime h2 {
+    font-size: 60px; 
+    font-weight: bold; 
+    color: goldenrod;
+    text-align: center;
+}
+
+.orderWaitTime p {
+    color: lightgrey;
+    text-align: center;    
+}
+

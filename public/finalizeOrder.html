@@ -1,0 +1,27 @@
+<div class="finalize_order" ng-controller="finalizeOrderController">
+    
+	<div class="form">
+        <h1>Formularz</h1>
+        <form name="orderForm" novalidate>
+            <input type="text" name="street" ng-model="form.street" placeholder="Ulica" required><br>
+			<input type="text" name="phone" ng-model="form.phone" ng-change="phoneValidation()" placeholder="Numer telefonu" required><br>
+			<textarea name="remarks" ng-model="form.remarks" placeholder="Uwagi"></textarea><br>
+			<button id="backButton" ng-click=goToMain()>Wróć</button>
+	        <button id="submitButton" ng-disabled="form.$invalid || !validOrder" ng-click="postOrder()">Zamów</button>
+        </form>
+    </div>
+
+    <div class="basket_read_only">
+        <h1>Koszyk</h1>
+            <ul>
+                <li ng-repeat = "position in basket">
+                <p>{{position.count}}x {{position.name}} - {{position.price}} zł</p>
+            </ul>
+            <p class="orderSum">Suma: {{total}} zł</p>
+    </div>
+
+   
+
+    <div ng-show="postFailed">Nieprawidłowe zamówienie</div>
+
+</div>
